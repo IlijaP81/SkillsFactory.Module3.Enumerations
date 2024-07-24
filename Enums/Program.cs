@@ -23,7 +23,8 @@ class Program
         bool inputIsValid = true;
         try
         {
-            userInput = byte.Parse(valueToCheck);
+            // use TryParse instead
+            userInput = checked (byte.Parse(valueToCheck));
         }
         catch
         {
